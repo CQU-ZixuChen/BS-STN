@@ -19,19 +19,18 @@ class STGCN(torch.nn.Module):
         self.convF2 = ChebConv(256, 64, 2)
         self.bnF1 = torch.nn.BatchNorm1d(256)
         self.bnF2 = torch.nn.BatchNorm1d(64)
-
         self.linF1 = torch.nn.Linear(128, 5)
+        
         # Distance graph view #
         self.convD1 = ChebConv(1025, 256, 2)
         self.convD2 = ChebConv(256, 64, 2)
         self.bnD1 = torch.nn.BatchNorm1d(256)
         self.bnD2 = torch.nn.BatchNorm1d(64)
-
         self.linD1 = torch.nn.Linear(128, 5)
+        
         # Fusion classifier
         self.lin1 = torch.nn.Linear(256, 5)
-        # Domain classifier
-        # self.discriminator = torch.nn.Linear(256, 1)
+        
         # Learnable temporal and spatial position embeddings
         self.TembF = torch.nn.Parameter(torch.randn(3, 1025), requires_grad=True)
         self.SembF = torch.nn.Parameter(torch.randn(12, 1025), requires_grad=True)
@@ -88,10 +87,6 @@ class STGCN(torch.nn.Module):
         fusion = torch.cat([xF_feature, xD_feature], dim=1)
         print(np.shape(fusion))
         output = F.softmax(self.lin1(fusion), dim=-1)
-
-        # Domain classify
-        # fusion_reverse = GradientReversalLayer.apply(fusion, 1)
-        # domain = F.sigmoid(self.discriminator(fusion_reverse))
 
         return outputF, outputD, fusion, output
 
