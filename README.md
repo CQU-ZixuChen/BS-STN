@@ -6,14 +6,14 @@ diagnosis of rotating machinery", which is submitted to the journal: Mechanical 
 
 ## **Self-collected dataset**
 
-$\bullet$[Sliding Bearing Dataset](https://openai.com)
+$\bullet$ [Sliding Bearing Dataset](https://openai.com)
 
 ![image](https://github.com/CQU-ZixuChen/BS-STN/blob/main/SlidingBearingTestBench.png)
 
 
 ## **Related work**
 
-[Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear](https://www.sciencedirect.com/science/article/abs/pii/S0301679X24000380)
+$\bullet$ [Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear](https://www.sciencedirect.com/science/article/abs/pii/S0301679X24000380)
 
 ## **Citation**
 
