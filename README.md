@@ -11,7 +11,7 @@ $\bullet$ [Sliding Bearing Dataset](https://www.researchgate.net/profile/Zixu-Ch
 ![image](https://github.com/CQU-ZixuChen/BS-STN/blob/main/SlidingBearingTestBench.png)
 
 
-## **Related work**
+## **Related works**
 
 $\bullet$ [Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear](https://www.sciencedirect.com/science/article/abs/pii/S0301679X24000380)
 
