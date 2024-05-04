@@ -6,14 +6,10 @@ diagnosis of rotating machinery", which is submitted to the journal: Mechanical 
 
 ## **Self-collected sliding bearing dataset**
 
-Test bench
+[Sliding Bearing Dataset](https://openai.com)
 
 ![image](https://github.com/CQU-ZixuChen/BS-STN/blob/main/SlidingBearingTestBench.png)
 
-
-Data
-
-[Sliding Bearing Dataset](https://openai.com)
 
 ## **Related work**
 
