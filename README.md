@@ -5,6 +5,7 @@ diagnosis of rotating machinery", which is submitted to the journal: Mechanical 
 ![image](https://github.com/CQU-ZixuChen/BS-STN/blob/main/SlidingBearingTestBench.png)
 
 If you have used the sliding bearing dataset, please cite the following paper:
+
 @article{zhang2024dynamic,
   title={Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear},
   author={Zhang, Chaodong and Yu, Wennian and Zhang, Lu},
