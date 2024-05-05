@@ -6,8 +6,6 @@ diagnosis of rotating machinery", which is submitted to the journal: Mechanical 
 
 ## **Sliding bearing test bench**
 
-$\bullet$ [Sliding Bearing Dataset](https://www.researchgate.net/profile/Zixu-Chen-6/research)
-
 ![image](https://github.com/CQU-ZixuChen/BS-STN/blob/main/SlidingBearingTestBench.png)
 
 
