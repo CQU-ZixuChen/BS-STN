@@ -1,10 +1,10 @@
 ## **Description**
 
-This repository includes the code of BS-STN and the sliding bearing dataset collected by Chongqing University.
+This repository includes the source codes of BS-STN.
 The training codes and demos of BS-STN will be released after the acceptance of the manuscript "Bi-structural spatial-temporal network for few-shot fault
 diagnosis of rotating machinery", which is submitted to the journal: Mechanical Systems and Signal Processing.
 
-## **Self-collected dataset**
+## **Sliding bearing test bench**
 
 $\bullet$ [Sliding Bearing Dataset](https://www.researchgate.net/profile/Zixu-Chen-6/research)
 
