@@ -64,7 +64,6 @@ class STGCN(torch.nn.Module):
         xF = F.relu(self.bnF1(self.convF1(xF, edge_index_F)))
         xF = F.relu(self.bnF2(self.convF2(xF, edge_index_F)))
         xF_feature = torch.cat([gmp(xF[idx, :], batch_F[idx]), gap(xF[idx, :], batch_F[idx])], dim=1)
-        # xF_feature = torch.cat([gmp(xF, batch_F), gap(xF, batch_F)], dim=1)
 
         outputF = F.softmax(self.linF1(xF_feature), dim=-1)
 
@@ -79,17 +78,11 @@ class STGCN(torch.nn.Module):
         xD = F.relu(self.bnD1(self.convD1(xD, edge_index_D)))
         xD = F.relu(self.bnD2(self.convD2(xD, edge_index_D)))
         xD_feature = torch.cat([gmp(xD[idx, :], batch_D[idx]), gap(xD[idx, :], batch_D[idx])], dim=1)
-        # xD_feature = torch.cat([gmp(xD, batch_D), gap(xD, batch_D)], dim=1)
 
         outputD = F.softmax(self.linD1(xD_feature), dim=-1)
 
         # Fusion feature forward propagation
         fusion = torch.cat([xF_feature, xD_feature], dim=1)
-        print(np.shape(fusion))
         output = F.softmax(self.lin1(fusion), dim=-1)
 
         return outputF, outputD, fusion, output
-
-
-if __name__ == '__main__':
-    main()
