@@ -1,8 +1,7 @@
 ## **Description**
 
 This repository includes the source codes of BS-STN and the sliding bearing dataset collected by Chongqing University.
-The training codes and demos of BS-STN will be released after the acceptance of the manuscript "Bi-structural spatial-temporal network for few-shot fault
-diagnosis of rotating machinery", which is submitted to the journal: Mechanical Systems and Signal Processing.
+The training codes and demos of BS-STN will be released soon...
 
 ## **Self-collected sliding bearing dataset**
 
@@ -13,9 +12,25 @@ $\bullet$ [Sliding bearing dataset](https://drive.google.com/drive/folders/19l1M
 
 ## **Related works**
 
+$\bullet$ [Bi-structural spatial–temporal network for few-shot fault diagnosis of rotating machinery](https://www.sciencedirect.com/science/article/pii/S0888327025000792)
+
 $\bullet$ [Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear](https://www.sciencedirect.com/science/article/abs/pii/S0301679X24000380)
 
 ## **Citation**
+
+@article{CHEN2025112378,
+title = {Bi-structural spatial–temporal network for few-shot fault diagnosis of rotating machinery},
+journal = {Mechanical Systems and Signal Processing},
+volume = {227},
+pages = {112378},
+year = {2025},
+issn = {0888-3270},
+doi = {https://doi.org/10.1016/j.ymssp.2025.112378},
+url = {https://www.sciencedirect.com/science/article/pii/S0888327025000792},
+author = {Zixu Chen and J.C. Ji and Qing Ni and Benyuan Ye and Xiaoxi Ding and Wennian Yu},
+keywords = {Bi-structural, Spatial–temporal information, Adaptive inference fusion, Fault diagnosis, Sliding bearing dataset, Rotating machinery},
+abstract = {Recently, many spatial–temporal diagnostic frameworks have been proposed to improve the few-shot diagnostic performance of rotating machinery through extracting inherent and generalized features. But most methods extract spatial and temporal features separately by stacking 1D convolution and temporal modules, which could decrease the spatial–temporal correlation and result in the loss of information. The emerging graph convolutional network (GCN) is adept at handling multi-channel data, providing a more powerful spatial feature extraction method. Therefore, it is worth extending spatial–temporal frameworks by incorporating GCN. However, the graphs in most GCN-based methods are constructed through single modeling strategy such as KNN-Graph or Radius-Graph, which may not exhibit high generalization in dealing with different datasets. To address these limitations and improve the diagnostic performance of rotating machinery in few-shot scenarios, a Bi-Structural Spatial-Temporal Network (BS-STN) is proposed in this paper. Physic and function informed graphs with bi-structural inference paths, are introduced to obtain richer information through feature fusion. An adaptive inference fusion module is designed to dynamically adjust the contribution of fusion-view and single-view features to gradient descent, thereby avoiding potential overfitting caused by feature fusion. Multiple time-step graphs are connected by the same nodes to construct a temporal graph, which in combination with broadcast-based temporal and spatial embedding enable graph convolution to propagate temporal and spatial information synchronously, thus avoiding information loss and extracting inherent features. A thrust sliding bearing dataset is open-sourced, comprising multi-channel signals of normal, thrust pad wear and lubricating oil contamination. Experiments are conducted on two publicly available datasets and the self-collected sliding bearing dataset. The comparative analyses in different few-shot scenarios demonstrate the effectiveness and superiority of BS-STN. The source codes of the proposed method and the self-collected sliding bearing data are available at: https://github.com/CQU-ZixuChen/BS-STN.}
+}
 
 @article{ZHANG2024109287,
 title = {Dynamic characteristics of tilting-pad coupled-bearing-rotor systems considering mixed lubrication and pad wear},
