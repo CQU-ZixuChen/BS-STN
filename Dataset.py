@@ -14,11 +14,10 @@ class MyGraphDataset(InMemoryDataset):
     def __init__(self, root, transform=None, pre_transform=None, pre_filter=True):
         super().__init__(root, transform, pre_transform)
         self.data, self.slices = torch.load(self.processed_paths[0])
-    #返回数据集源文件名
     @property
     def raw_file_names(self):
         return ['some_file_1', 'some_file_2', ...]
-    #返回process方法所需的保存文件名。你之后保存的数据集名字和列表里的一致
+    #Returns the filename to be saved as required by the process method. The name of the dataset you save later should be consistent with the one in the list.
     @property
     def processed_file_names(self):
         return ['data.pt']
